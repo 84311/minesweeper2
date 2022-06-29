@@ -1,0 +1,61 @@
+<h5 id="description">Description</h5>
+
+<p>In this stage, you are going to create all the components of the game. Don’t be scared: here, you will be working
+  only on the visuals! Before you get to work, make sure that you know how to create functional components and use
+  props: you may consult the <a href="https://reactjs.org/docs/components-and-props.html"
+                                rel="noopener noreferrer nofollow" target="_blank" target="_blank" target="_blank"
+                                target="_blank" target="_blank">React library official website</a> if you need to learn
+  or refresh something. Your task is to decide how to break down the game into parts, that is, the components of your
+  app, then use <em>JSX</em> to describe it, and make the game look nice.</p>
+
+<p>Let’s think about what elements we need in our game. First of all, you need a playing <strong>field</strong>: let it
+  contain 8 columns and 9 rows. Position the cells to form straight rows and columns: give a <code class="java"><em>className</em></code>
+  to the whole field and <code class="java">className=”cell”</code> to all cells, then you can easily position them with
+  <code class="java">display flex</code>. Note: since there are a lot of similar objects, it’s better to use <code
+          class="java">map()</code> instead of hard code. Check out an <a
+          href="https://reactjs.org/docs/lists-and-keys.html" rel="noopener noreferrer nofollow" target="_blank"
+          target="_blank" target="_blank" target="_blank" target="_blank">article on lists and keys</a> to learn how to
+  do it.</p>
+
+<p>Remember, the player needs to find all the mines to win the game, so let's make a <strong>flag counter</strong> that
+  will keep track of the remaining unflagged mines. At the beginning of the game, there are 10 unflagged mines.</p>
+
+<p>Following the original version of Minesweeper, let's also add a <strong>reset button </strong>and a
+  <strong>timer</strong>. Don't forget that when the game hasn’t started yet, the timer should show <samp>0:00</samp>.
+  The reset button should be the only element on which the cursor changes into a pointer.</p>
+
+<p>Great, we have listed the elements of the game! The app should also have a <a
+        href="https://reactjs.org/docs/thinking-in-react.html" rel="noopener noreferrer nofollow" target="_blank"
+        target="_blank" target="_blank" target="_blank" target="_blank">component hierarchy</a>: figure out which
+  components will determine the content of others and how you will pass props. You can decide on the structure by
+  yourself, or use the recommended plan: </p>
+
+<p><img alt="" height="587" src="https://ucarecdn.com/1d270ff4-82f8-46de-b991-eddb1d0c34c1/" width="517"></p>
+
+<p>The final touch is to add the name "Minesweeper” and improve the game's looks by styling it. For example, you can put
+  a picture near the name and play with colors. Flex your imagination and be creative!</p>
+
+<p>As a result, you’ll see the Minesweeper game that does not work... for now.</p>
+
+<p>Your intermediate solution can be compiled and run in a browser using the <code class="java">npm start</code> command
+  in the WebStorm terminal, to stop the server use <code class="java">Ctrl+C</code>.</p>
+
+<h5 id="objectives">Objectives</h5>
+
+<ol>
+  <li>Implement components:<br>
+    Field 8x9<br>
+    Flag counter equal to 10 <br>
+    Reset button<br>
+    Timer at 0:00 <br>
+    Components and the hierarchy
+  </li>
+  <li>Add CSS</li>
+</ol>
+
+<h5 id="examples">Examples</h5>
+
+<p>In a browser, the result of this step will look something like this:</p>
+
+<p style="text-align: center;"><img alt="" height="485" src="https://ucarecdn.com/bf3d1073-b462-46c9-889b-1767304884f4/"
+                                    width="415"></p>

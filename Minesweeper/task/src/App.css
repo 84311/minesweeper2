@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
+
+* {
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  display: inline-block;
+  transform: translateY(-10px);
+}
+
+.App {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: black;
+}
+
+.App-logo {
+  height: 55px;
+  pointer-events: none;
+  width: 55px;
+  margin-left: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(16px + 1vmin);
+  color: white;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.game {
+  box-shadow: 0 0 1em red;
+  background-color: #110022;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  max-width: 80vh;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.control-panel {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cell {
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.safe-cell {
+  background: green;
+}
+
+.mined-cell {
+  background: url("../resources/img/fired.svg");
+  background-size: cover;
+}
+
+.flagged-cell {
+  background: url("../resources/img/target.svg");
+  background-size: cover;
+}
+
+#field {
+  box-shadow: 0 0 1em red;
+  background-color: red;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(9, 60px);
+}
+
+#flag-cnt-pic {
+  height: 25px;
+  width: auto;
+  transform: translateY(5px);
+}
+
+#reset-button {
+  font-size: 16px;
+  background-color: black;
+  border: none;
+  color: red;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#reset-button:active {
+  transform: translateY(3px);
+}
+
+.red-text-shadow {
+  text-shadow: 0 0 8px red;
+}
+
+@media only screen and (max-width: 1000px) {
+  #field {
+    grid-template-columns: repeat(8, 40px);
+    grid-template-rows: repeat(9, 40px);
+  }
+
+  .control-panel {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  #field {
+    grid-template-columns: repeat(8, 30px);
+    grid-template-rows: repeat(9, 30px);
+  }
+
+  .control-panel {
+    width: 240px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

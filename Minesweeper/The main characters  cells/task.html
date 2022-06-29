@@ -1,0 +1,58 @@
+<h5 id="description">Description</h5>
+
+<p>A good application is a working application, so let's get ours to work! We'll start with the fundamental parts: the
+  cells. The player should be able to open any cell by clicking it, or flag it with a right-click. To make this
+  possible, you need to <a href="https://reactjs.org/docs/state-and-lifecycle.html" rel="noopener noreferrer nofollow"
+                           target="_blank" target="_blank" target="_blank" target="_blank" target="_blank">add a
+    state</a>. Store the array that contains information about the field; make a function for creating an initial array
+  with the placed mines. Remember that each time, the game field should be different, that is, the function should place
+  mines at random.</p>
+
+<p>Reminder: not only one component can have a state, so think about every piece of data and which component is
+  responsible for it.</p>
+
+<p>Then, you need to take care of <a href="https://reactjs.org/docs/conditional-rendering.html"
+                                     rel="noopener noreferrer nofollow" target="_blank" target="_blank" target="_blank"
+                                     target="_blank" target="_blank">conditional rendering</a> because you need to
+  distinguish between the cells with different statuses. Understand how to <a
+          href="https://reactjs.org/docs/handling-events.html" rel="noopener noreferrer nofollow" target="_blank"
+          target="_blank" target="_blank" target="_blank" target="_blank">handle events</a>, and do it for opening and
+  flagging cells. To show these changes, you should have styles for the closed, opened, and flagged cells. Add
+  contrasting borders or change the background color for the opened cells, and mark the flagged cells with a <a
+          href="https://stepik.org/media/attachments/lesson/360753/target.svg" rel="noopener noreferrer nofollow"
+          target="_blank" target="_blank" target="_blank" target="_blank" target="_blank">flag</a>/<a
+          href="https://stepik.org/media/attachments/lesson/360753/fired.svg" rel="noopener noreferrer nofollow"
+          target="_blank" target="_blank" target="_blank" target="_blank" target="_blank">mine</a> image. Here, you can
+  apply your knowledge about box-shadow!</p>
+
+<p>If you change the cell status, the state of the field should be changed, too; implement the methods that will do it!
+  You can use <a href="https://reactjs.org/docs/faq-functions.html" rel="noopener noreferrer nofollow" target="_blank"
+                 target="_blank" target="_blank" target="_blank" target="_blank">passing functions to components</a>
+  here and read about<em> execution context </em>in JavaScript.<br>
+  <br>
+  For testing purposes, each cell should have <code class="java">className=”cell”</code>. In case you need to use
+  another className, you should concatenate it with the required one, for example: <code class="java">className=”cell
+    fired”</code>.</p>
+
+<p>Your intermediate solution can be compiled and run in a browser using the <code class="java">npm start</code> command
+  in the WebStorm terminal, to stop the server use <code class="java">Ctrl+C</code>.</p>
+
+<h5 id="objectives">Objectives</h5>
+
+<ol>
+</ol>
+
+<ol>
+  <li>State to store the situation on the field</li>
+  <li>Functions to set the initial field and change it</li>
+  <li>Conditional rendering of cells</li>
+  <li>Event listeners for cells</li>
+  <li>Add required CSS</li>
+</ol>
+
+<h5 id="examples">Examples</h5>
+
+<p>In a browser, the result of this step will look something like this:</p>
+
+<p style="text-align: center;"><img alt="" height="416" src="https://ucarecdn.com/94841e5f-b24c-4e80-8d8f-4d61e5f79ca6/"
+                                    width="356"></p>
